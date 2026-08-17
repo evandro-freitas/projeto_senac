@@ -1,0 +1,33 @@
+name: Relatar bug
+description: Registrar um problema encontrado no laboratório.
+title: "fix: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: observed
+    attributes:
+      label: Problema observado
+      description: O que aconteceu?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Como reproduzir?
+      description: Descreva os passos.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento esperado
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidências
+      description: Status code, resposta, print do Swagger, log ou teste.

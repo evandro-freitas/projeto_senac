@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+.env
+*.pyc
+docs/INCIDENTES_PARA_LIBERAR.md
+docs/VALIDACAO_TECNICA.md
