@@ -1,3 +1,5 @@
+Alunos: Andre Bernardino, Evandro José de Freitas, João Antunes, Jeferson Macedo, Renan Mateus, Patrick dos Santos, João Gabriel
+
 # JP Solutions — FastAPI DevOps Lab
 
 Laboratório educacional para praticar:
