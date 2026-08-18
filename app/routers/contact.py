@@ -1,13 +1,13 @@
 from fastapi import APIRouter, HTTPException, status
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 
 router = APIRouter(prefix="/contact", tags=["Contact"])
 
 
 class ContactSchema(BaseModel):
-    name: str = Field(..., min_length=1)
-    email: str = Field(..., min_length=1)
-    message: str = Field(..., min_length=1)
+    name: str
+    email: str
+    message: str
 
 
 @router.post("")
@@ -22,4 +22,6 @@ def send_contact(contact: ContactSchema):
             detail="Campos obrigatórios não podem estar vazios",
         )
 
-    return {"message": "Contato enviado com sucesso!!!"}
+    return {
+        "message": "Contato enviado com sucesso!!!"
+    }
