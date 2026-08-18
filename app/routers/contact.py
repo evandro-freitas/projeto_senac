@@ -1,4 +1,4 @@
-from fastapi import APIRouter, status
+from fastapi import APIRouter, status, HTTPException
 
 router = APIRouter(prefix="/contact", tags=["Contact"])
 
